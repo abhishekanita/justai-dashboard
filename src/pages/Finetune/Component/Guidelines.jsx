@@ -37,6 +37,14 @@ const Guidelines = ({setStep}) => {
 
                 </div>
             </div>
+            <div class='mt-5'>
+                <h3>Kind of images we want</h3>
+                <div className='row'>
+                    {Array(10).fill().map(i => <div class='col'>
+                        <img src={`https://i.pravatar.cc/${parseInt(Math.random()*100)}`} style={{width: '100%'}}/>
+                    </div>)}
+                </div>
+            </div>
             <div className='text-end mt-5'>
                 <div class='btn w-25 btn-lg btn-primary' onClick={() => setStep('images')}>
                     Upload Images

@@ -9,6 +9,7 @@ import Upload from './Component/Upload'
 const Finetune = () => {
 
     const [step, setStep] = useState('guidelines')    
+    const [showComplete, setShowComplete] = useState(false)
 
 
   return (
@@ -26,10 +27,12 @@ const Finetune = () => {
                         />}
                         {step === 'images' && <Images
                             setStep={setStep}
+                            setShowComplete = {setShowComplete}
                         />}
-                        {step === 'upload' && <Upload
-                            setStep={setStep}
-                        />}
+                        <Upload
+                            show = {showComplete}
+                            setShow = {setShowComplete}
+                        />
                        
                     </div>
                 </div>

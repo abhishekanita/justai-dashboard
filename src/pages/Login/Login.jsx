@@ -41,12 +41,12 @@ const Login = () => {
                                 <p>Don't have an account yet? <a class="link" href="./authentication-signup-cover.html">Sign up here</a></p>
                             </div>
                             <div class="d-grid mb-4">
-                  <a class="btn btn-white btn-lg" href="#">
+                  <Link to = "/app" class="btn btn-white btn-lg" href="#">
                     <span class="d-flex justify-content-center align-items-center">
                       <img class="avatar avatar-xss me-2" src="https://htmlstream.com/front-dashboard/assets/svg/brands/google-icon.svg" alt="Image Description" />
                       Sign in with Google
                     </span>
-                  </a>
+                  </Link>
                 </div>
 
                 <span class="divider-center text-muted mb-4">OR</span>
